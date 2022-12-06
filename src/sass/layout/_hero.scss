@@ -1,0 +1,356 @@
+// ============= hero =============
+.hero {
+  padding: 137px 0;
+  background-color: #FFB8CA;
+
+@media screen and (max-width: 767px) {
+  overflow: hidden;
+}
+  @media screen and (min-width: 768px) {
+    padding: 15px 0 28px 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    padding: 84px 0 45px 0;
+  }
+}
+
+.hero-container {
+  position: relative;
+}
+
+.hero-background {
+  position: absolute;
+  @media screen and (max-width: 767px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -56%);
+  }
+
+  @media screen and (min-width: 768px) {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-23%);
+  }
+
+  @media screen and (min-width: 1280px) {
+        bottom: 8%;
+        left: 50%;
+        transform: translateX(-31%);
+  }
+}
+
+.hero-background::after {
+  position: relative;
+
+  display: inline-block;
+  content: '';
+  background-color: #FFA5BA;
+  border-radius: 50%;
+
+  width: 346px;
+  height: 344px;
+
+  @media screen and (min-width: 768px) {
+    width: 324px;
+    height: 322px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 538px;
+    height: 538px;
+  }
+}
+
+.hero__image-icecream {
+  position: absolute;
+  z-index: 1;
+
+  @media screen and (max-width: 767px) {
+    top: 8px;
+    left: 81px;
+  }
+
+  @media screen and (min-width: 768px) {
+    right: 110px;
+    bottom: -28px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: 183px;
+    bottom: -82px;
+  }
+}
+
+.hero__title {
+  position: relative;
+  z-index: 3;
+
+  width: 218px;
+
+  margin-bottom: 19px;
+
+  font-family: Titan One;
+  font-size: 26px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  color: var(--primary-button-color);
+
+  @media screen and (min-width: 768px) {
+    width: 162px;
+    margin-bottom: 20px;
+
+    font-size: 22px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 277px;
+    margin-bottom: 25px;
+
+    font-size: 38px;
+    line-height: 1.16;
+  }
+
+  & span {
+    font-size: 48px;
+    line-height: 0.96;
+
+    color: var(--accent-color);
+
+    @media screen and (min-width: 768px) {
+      font-size: 34px;
+      line-height: 0.91;
+    }
+
+    @media screen and (min-width: 1280px) {
+      font-size: 58px;
+      line-height: 0.90;
+    }
+  }
+}
+
+.place-list {
+  position: absolute;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    top: 0;
+    right: 15px;
+  }
+}
+
+.place-list__item {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 13px;
+}
+
+.place-list__item::after {
+  position: absolute;
+  display: inline-block;
+  content: '';
+  z-index: -1;
+
+  background-color: #FFFFFF;
+  border-radius: 50%;
+
+  @media screen and (min-width: 768px) {
+    right: -8px;
+    top: -3px;
+    width: 15px;
+    height: 15px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    right: -15px;
+    top: -8px;
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.place-list__text {
+  text-align: right;
+
+  @media screen and (min-width: 768px) {
+    font-size: 8px;
+    line-height: 1.25;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 14px;
+    line-height: 1.29;
+  }
+}
+
+.place-list__text--big {
+  letter-spacing: 0.04em;
+  color: var(--accent-color);
+  font-family: Titan One;
+  text-align: right;
+
+  @media screen and (min-width: 768px) {
+    font-size: 28px;
+    line-height: 1.14;
+  }
+
+  @media screen and (min-width: 1280px) {
+    font-size: 46px;
+    line-height: 1.15;
+  }
+}
+
+.hero-list__item {
+  display: inline-block;
+
+  @media screen and (min-width: 768px) {
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+  }
+
+  @media screen and (min-width: 1280px) {
+    &:not(:last-child) {
+      margin-right: 8px;
+    }
+  }
+}
+
+.hero-list__link {
+  display: inline-block;
+  position: relative;
+  z-index: 3;
+
+  padding: 9px 14px;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  border-radius: 20px;
+
+  @media screen and (min-width: 1280px) {
+    padding: 12px 22px;
+    font-size: 14px;
+    line-height: 1.29;
+  }
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    transform: scale(1.15);
+  }
+
+  &--red {
+    color: var(--primary-button-color);
+    background-color: var(--secondary-button-color);
+
+    &:focus,
+    &:hover {
+      color: var(--secondary-button-color);
+      background-color: var(--primary-button-color);
+    }
+  }
+
+  &--white {
+    color: var(--secondary-button-color);
+    background-color: var(--primary-button-color);
+
+    &:focus,
+    &:hover {
+      color: var(--primary-button-color);
+      background-color: var(--secondary-button-color);
+    }
+  }
+}
+
+.hero-info {
+  display: inline-block;
+}
+
+.hero-info__text {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 114px;
+    margin-bottom: 7px;
+    font-size: 8px;
+    line-height: 1.5;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 200px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 1.4;
+  }
+}
+
+.hero-info__button {
+  line-height: 0;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus,
+  &:hover {
+    transform: scale(1.5);
+  }
+}
+
+.hero-info__icon {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 18px;
+    height: 18px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+// ============= image =============
+
+.hero__image-milk {
+  display: inline-block;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 19px;
+  }
+
+  @media screen and (min-width: 1280px) {
+    margin-top: 56px;
+  }
+}
+
+.hero__image-girl {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    bottom: -28px;
+    right: 0;
+  }
+
+  @media screen and (min-width: 1280px) {
+    bottom: -45px;
+    right: -15px;
+  }
+
+}
