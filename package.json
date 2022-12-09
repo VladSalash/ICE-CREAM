@@ -1,16 +1,16 @@
 {
-  "name": "parcel-project-template",
+  "name": "ICE-CREAM",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://mpaukov.github.io/team-project-icecream",
+  "homepage": "https://VladSalash.github.io/ICE-CREAM",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /team-project-icecream/"
+    "build": "parcel build src/*.html --public-url ./"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
+    "url": "git+https://github.com/VladSalash/ICE-CREAM.git"
   },
   "keywords": [],
   "author": "Alexander Repeta <alexander.repeta@gmail.com>",
