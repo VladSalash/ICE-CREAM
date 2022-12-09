@@ -1,0 +1,15 @@
+%button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  min-height: 24px;
+  min-width: 62.4px;
+  font-family: $primary-font;
+  font-style: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  border: none;
+  border-radius: 22px;
+}
