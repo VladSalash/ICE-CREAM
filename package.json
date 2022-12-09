@@ -6,7 +6,7 @@
   "homepage": "https://ipanamas.github.io/Ice-cream/",
   "scripts": {
     "dev": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /Ice-cream/"
+    "build": "parcel build src/*.html --public-url ./"
   },
   "repository": {
     "type": "git",
